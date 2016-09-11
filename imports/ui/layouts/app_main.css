@@ -1,0 +1,25 @@
+.site-wrapper{
+}
+.site-wrapper > header, nav, main, aside, footer{
+  display: block;
+}
+.site-wrapper > header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: block;
+  z-index: 98;
+}
+
+.site-wrapper > main{
+  width: 100%;
+  order:2;
+  display: block;
+}
+
+.site-wrapper > footer{
+  height:100px;
+  width: 100%;
+  order:3;
+  display: block;
+}

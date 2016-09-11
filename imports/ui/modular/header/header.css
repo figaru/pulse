@@ -1,0 +1,100 @@
+.header-wrapper{
+	max-height: 75px;
+	width: 100%;
+	position: relative;
+	background-color: none;
+	color: #fff;
+	display: table;
+	transition: background-color 0.3s ease;
+}.header-wrapper.fixed{
+	background-color: #23282d;
+}
+
+.header-wrapper > .nav{
+	width: 40%;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+}.header-wrapper > .nav > nav.navigation{
+	text-align: left;
+	height: auto;
+	display: block;
+	padding-left: 40px;
+	}nav.navigation > ul{
+		font-size: 1em;
+		margin: 0;
+		list-style: none;
+		margin-left: -1em;
+		}nav.navigation > ul > li{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 1em;
+			padding: 0;
+			}nav.navigation > ul > li > a{
+				display: inline-block;
+				text-decoration: none;
+				text-transform: uppercase;
+				color: #fff;
+				opacity: 1;
+				font-weight: bold;
+				font-size: .9em;
+				transition: all 0.2s ease-out;
+				min-height: 100%;
+				padding: 0.5em 0.5em;
+			}
+
+
+.header-wrapper > .branding{
+	width: 20%;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}.header-wrapper > .branding > .title{
+	white-space: nowrap;
+	padding: 1em 0;
+	line-height: 1em;
+	font-size: 1.66667rem;
+	font-weight: bold;
+	line-height: 1.66667rem;
+	letter-spacing: -0.05em;
+}
+
+.header-wrapper > .tools{
+	width: 40%;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	padding-right: 35px;
+	}.tools > ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: table;
+		text-align: right;
+		float: right;
+		font-size: 1em;
+		}.tools > ul > li{
+			padding: 0 0 0 20px;
+			margin: 0;
+			display: table-cell;
+			line-height: 1em;
+			vertical-align: middle;
+			}.tools > ul > li > a {
+				text-align: center;
+				vertical-align: middle;
+				opacity: 1;
+				padding: 0px 5px;
+			}.tools > ul > li > a > svg{
+				display: inherit;
+				width: 18px;
+				height: 18px;
+				transition: all 0.3s ease;
+				fill: #fff;
+			}
+
+a.header-button{
+	transition: opacity 0.3s ease;
+}
+a.header-button:hover{
+	opacity: .6;
+}

@@ -1,0 +1,26 @@
+<template name="Auth">
+	{{#if loggedIn}}
+
+	{{else}}
+		{{#if loggingIn}}
+			loading...
+		{{else}}
+			<form class="js-login-form">
+				<input type="text" name="username" id="login-user" placeholder="Username">
+				<br>
+				<input type="password" name="password" id="login-pass" placeholder="Password">
+				<br><br>
+				<input type="submit" name="submit" value="submit">
+			</form>
+			<br>
+			<form class="js-register-form">
+				<input type="text" name="username" id="register-user" placeholder="Username">
+				<br>
+				<input type="password" name="password" id="register-pass" placeholder="Password">
+				<br><br>
+				<input type="submit" name="submit" value="submit">
+			</form>
+
+		{{/if}}
+	{{/if}}
+</template>

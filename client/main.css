@@ -1,1 +1,32 @@
 /* CSS declarations go here */
+body, form, fieldset, ol, ul, li, h1, h2, h3, h4, h5, h6, p {
+ font-family: 'Poppins', sans-serif !important;
+	margin:0;
+	padding:0;
+  text-rendering: optimizeLegibility;
+}
+/* ------------------- Defaults ------------------- */
+html {
+	height:100% !important; 
+	font-size: 14px;
+  -webkit-text-size-adjust: 100%;
+  background-color: #fff;
+}
+body {
+	height:100% !important; /* helps make height 100% */
+	font-size: 14px;
+	background-color: #fff;
+  /*background-color: #2e2f30 !important;*/
+}
+
+a, link{
+	text-decoration: none;
+	color: inherit;
+}
+
+.row{
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 100%;
+}
