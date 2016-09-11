@@ -1,7 +1,12 @@
 <template name="App_main">
-  <header><h1>Pulse</h1></header>
-  <main>
-    {{>Template.dynamic template=content}}
-  </main>
-  <footer>Meteor</footer>
+	<div class="site-wrapper">
+	  <header>
+	  	{{> modular_header}}
+	  </header>
+	  <main>
+	  	{{>Template.dynamic template=content}}
+	  </main>
+	  <footer>Footer Bar</footer>  
+	</div>
 </template>
+
