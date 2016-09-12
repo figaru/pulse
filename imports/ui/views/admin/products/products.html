@@ -1,5 +1,5 @@
-<template name="view_admin_product">
-	<h1>Products Page</h1>
+<template name="view_admin_products">
+	<h1>Products Page {{products}}</h1>
 
 	<h2>Add Product</h2>
 	<form class="js-form-add">
@@ -16,5 +16,7 @@
 		<input type="text" name="gender" placeholder="Gender">
 		<br><br>
 		<input type="text" name="image" placeholder="Image Location...">
+		<br><br>
+		<input type="submit" name="submit" value="Add Product">
 	</form>
 </template>

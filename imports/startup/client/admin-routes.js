@@ -4,7 +4,7 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 import '../../ui/layouts/admin.js';
 import '../../ui/views/admin/admin.js';
 
-import '../../ui/views/admin/product/product.js'
+import '../../ui/views/admin/products/products.js'
 
 var adminRoutes = FlowRouter.group({
   prefix: '/admin',
@@ -32,8 +32,8 @@ adminRoutes.route('/', {
 });
 
 // handling /admin/posts
-adminRoutes.route('/product', {
+adminRoutes.route('/products', {
   action: function() {
-    BlazeLayout.render('layout_admin', {content: 'view_admin_product'});
+    BlazeLayout.render('layout_admin', {content: 'view_admin_products'});
   }
 });

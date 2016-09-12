@@ -4,3 +4,6 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 
 import './admin.html';
+
+Template.layout_admin.onCreated(function app_mainCreate(){
+});
