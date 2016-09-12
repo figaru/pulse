@@ -1,4 +1,4 @@
-<template name="app_shop">
+<template name="shop_home">
 	<div class="shop-header">
 		<div class="shop-title">Donation Shop</div>
 		<div class="shop-tools">
@@ -31,25 +31,29 @@
 	<div class="row">
 		<div class="shop-listing">
 			<ul class="products">
-				<li class="product">
-					<div class="thumbnail">
-						<img src="http://g01.a.alicdn.com/kf/HTB1sz6gJFXXXXcoXpXXq6xXFXXXy/New-Fashion-Bracelet-DIY-Bead-Bracelets-Charm-Bracelets-for-Women-Silver-Plated-Chain-Bracelet-Beads-Jewelry.jpg">
-					</div>
-					<div class="actions-wrapper">
-						<div class="actions">
-							<div class="action">
-								<a href="#">Quick View</a>
-							</div>
-							<div class="action">
-								<a href="#">Add to cart</a>
+				{{#each products}}
+					<li class="product">
+						<div class="thumbnail js-thumbail">
+							<img src="{{image}}">
+						</div>
+						<div class="actions-wrapper">
+							<div class="actions">
+								<div class="action">
+									<a class="js-view">Quick View</a>
+								</div>
+								<div class="action">
+									<a class="js-add-cart">Add to cart</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="details">
-						<div class="title">Zulu Bracelet</div>
-						<div class="price">$219.99</div>
-					</div>
-				</li>
+						<div class="details js-details">
+							<div class="title">{{name}}</div>
+							<div class="price">${{price}}</div>
+						</div>
+					</li>
+				{{else}}
+					No products available
+				{{/each}}
 			</ul>
 		</div>
 		<div class="shop-sidebar">

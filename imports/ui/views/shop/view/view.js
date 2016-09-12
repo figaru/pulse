@@ -1,7 +1,5 @@
-import './shop.html';
-import './shop.css';
-
-import './view/view.js';
+import './view.html';
+import './view.css';
 
 import { Meteor } from 'meteor/meteor';
 import { ReactiveVar } from 'meteor/reactive-var';
@@ -10,9 +8,9 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { Template } from 'meteor/templating';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 
-import { Products } from '../../../api/products/products.js';
+import { Products } from '../../../../api/products/products.js';
 
-Template.shop_home.onCreated(function shopCreate(){
+Template.shop_view.onCreated(function shopViewCreate(){
 	const handle = Meteor.subscribe('Products');
 	
 	Tracker.autorun(() => {
@@ -21,14 +19,14 @@ Template.shop_home.onCreated(function shopCreate(){
 	});
 });
 
-Template.shop_home.helpers({
-  products() {
-    return Products.find({}).fetch();
+Template.shop_view.helpers({
+  product() {
+    return Products.findOne({_id: FlowRouter.getParam("id")});
   },
 });
 
 
-Template.shop_home.events({
+Template.shop_view.events({
 	'click .js-thumbail, click .js-view, click .details'(event, instance){
 		FlowRouter.go("/shop/products/" + this._id);
 	}

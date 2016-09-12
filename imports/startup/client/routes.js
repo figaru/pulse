@@ -11,11 +11,3 @@ FlowRouter.route('/', {
     BlazeLayout.render('App_main', { content: 'app_home' });
   },
 });
-
-FlowRouter.route('/shop', {
-  name: 'App.shop',
-  action() {
-    BlazeLayout.render('App_main', { content: 'app_shop' });
-  },
-});
-

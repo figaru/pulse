@@ -1,0 +1,36 @@
+.shop-view{
+	width: 100%;
+	margin-top: 70px;
+	padding-top: 10px;
+	display: table;
+}.shop-view > .left{
+		width: 50%;
+		display: table-cell;
+	}.left > .image-nav{
+			width: 90px;
+			float: left;
+			position: relative;
+			/*min-height: calc(100vh - 148px);*/
+		}.image-nav > .nav-thumbnail{
+			width: 100%;
+			display: block;
+			float: left;
+			padding: 5px;
+		}.image-nav > .nav-selected{
+			opacity: .5;
+		}.nav-thumbail > img {
+			width: 100%;
+			cursor: pointer;
+		}
+	.left > .image{
+			width: calc(100% - 90px);
+			float: left;
+		}.image > img{
+			width: 100%;
+		}
+ .shop-view > .right{
+		width: 50%;
+		display: table-cell;
+		vertical-align: middle;
+		padding: 10%;
+	}
