@@ -1,4 +1,4 @@
-import { FlowRouter } from 'meteor/kadira:flow-router';
+ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 
 import '../../ui/layouts/app_main.js';
@@ -18,3 +18,4 @@ FlowRouter.route('/shop', {
     BlazeLayout.render('App_main', { content: 'app_shop' });
   },
 });
+

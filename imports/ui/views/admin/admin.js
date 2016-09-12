@@ -1,5 +1,4 @@
-import './shop.html';
-import './shop.css';
+import './admin.html';
 
 
 import { Meteor } from 'meteor/meteor';
@@ -8,4 +7,3 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 
 import { Template } from 'meteor/templating';
 import { FlowRouter } from 'meteor/kadira:flow-router';
-
