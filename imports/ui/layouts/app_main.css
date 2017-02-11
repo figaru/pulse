@@ -1,4 +1,13 @@
 .site-wrapper{
+  position: absolute;
+  width: calc(100% + 1px);
+  z-index: 10;
+  left: 0px;
+  top: 0px;
+  transition: left 0.3s ease;
+}
+.site-wrapper.slide{
+  left: -400px;
 }
 .site-wrapper > header, nav, main, aside, footer{
   display: block;
@@ -7,14 +16,20 @@
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
   display: block;
   z-index: 98;
+  transition: all 0.3s ease;
+}.site-wrapper.slide > header{
+  position: absolute;
+  z-index: 10;
 }
 
 .site-wrapper > main{
   width: 100%;
   order:2;
   display: block;
+  z-index: 10;
 }
 
 .site-wrapper > footer{
@@ -22,4 +37,15 @@
   width: 100%;
   order:3;
   display: block;
+  z-index: 10;
+}
+
+.site-wrapper > aside{
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: -400px;
+  z-index: 0 !important;
+  
 }

@@ -1,12 +1,19 @@
 <template name="App_main">
-	<div class="site-wrapper">
+	<div id="site-wrapper" class="site-wrapper">
 	  <header>
 	  	{{> modular_header}}
+	  	<div class="js-aside">click</div>
 	  </header>
 	  <main>
 	  	{{>Template.dynamic template=content}}
 	  </main>
-	  <footer>Footer Bar</footer>  
+	  <footer>
+	  	{{> modular_footer}}
+	  </footer>
+	  <aside>
+	  	test
+	  	<div class="js-aside">click</div>
+	  </aside>
 	</div>
 </template>
 

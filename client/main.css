@@ -5,17 +5,39 @@ body, form, fieldset, ol, ul, li, h1, h2, h3, h4, h5, h6, p {
 	padding:0;
   text-rendering: optimizeLegibility;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.33;
+    margin-bottom: 0.5rem;
+    margin-top: 0rem;
+    text-rendering: optimizeLegibility;
+}
+
+p {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.6;
+    margin-bottom: 1.11111rem;
+    text-rendering: optimizeLegibility;
+}
 /* ------------------- Defaults ------------------- */
 html {
 	height:100% !important; 
 	font-size: 14px;
   -webkit-text-size-adjust: 100%;
   background-color: #fff;
+  overflow-x: hidden;
 }
 body {
 	height:100% !important; /* helps make height 100% */
 	font-size: 14px;
 	background-color: #fff;
+  overflow-x: hidden;
   /*background-color: #2e2f30 !important;*/
 }
 
